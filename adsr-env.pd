@@ -1,0 +1,31 @@
+#N canvas 60 46 1221 688 12;
+#X obj 318 532 vline~;
+#X obj 198 97 vsl 30 200 0 3000 0 0 empty empty empty 0 -9 0 10 #9c00ff
+#000000 #000000 0 1;
+#X obj 242 96 vsl 30 200 0 1000 0 0 empty empty empty 0 -9 0 10 #bb55ff
+#000000 #000000 0 1;
+#X obj 284 96 vsl 30 200 0 1 0 0 empty empty empty 0 -9 0 10 #c671ff
+#000000 #000000 0 1;
+#X obj 334 98 vsl 30 200 0 3000 0 0 empty empty empty 0 -9 0 10 #dca8ff
+#000000 #000000 0 1;
+#X text 207 75 A;
+#X text 253 74 D;
+#X text 297 75 S;
+#X text 345 72 R;
+#X obj 204 407 pack f f f f;
+#X msg 182 458 \$1 \$2 \, \$4 \$3 \$2;
+#X obj 349 434 pack f f;
+#X msg 395 473 0 \$2;
+#X text 379 88 Nivel de ataque - \$1 Tiempo de atque - \$2 Nivel de
+sustain - \$3 Tiempo de decaimiento - \$4;
+#X obj 321 574 outlet~;
+#X connect 0 0 14 0;
+#X connect 1 0 9 1;
+#X connect 2 0 9 2;
+#X connect 3 0 9 3;
+#X connect 4 0 11 1;
+#X connect 9 0 10 0;
+#X connect 10 0 0 0;
+#X connect 11 0 12 0;
+#X connect 12 0 0 0;
+#X coords 0 -1 1 1 200 260 1 175 50;
