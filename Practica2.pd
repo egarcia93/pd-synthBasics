@@ -1,0 +1,18 @@
+#N canvas 717 42 949 667 12;
+#X obj 119 123 additive-synth;
+#X obj 123 172 fm-synth;
+#X obj 237 454 output;
+#X obj 562 77 adsr-env;
+#X obj 231 40 midi-receiver;
+#X floatatom 231 64 5 0 0 0 - - - 0;
+#X obj 334 337 *~;
+#X obj 276 69 s noteon;
+#X obj 348 72 s noteoff;
+#X connect 0 0 6 0;
+#X connect 3 0 6 1;
+#X connect 4 0 5 0;
+#X connect 4 1 7 0;
+#X connect 4 2 8 0;
+#X connect 5 0 0 0;
+#X connect 6 0 2 0;
+#X connect 6 0 2 1;
